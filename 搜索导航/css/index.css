@@ -9,6 +9,9 @@ a{
     text-decoration: none;
     color: slategray;
 }
+body{
+    background-color: #080325;
+}
 .clearfix::after{
     content: "";
     display: block;
@@ -19,7 +22,7 @@ a{
 .headerNav{
     height: 80px;
     padding: 15px 30px;
-    background-color: skyblue;
+    background-color: #000;
     box-sizing: border-box;
 }
 .logo{
@@ -42,13 +45,30 @@ a{
     line-height: 50px;
 }
 ul li{
+    position: relative;
     float: left;
     height: 50px;
     line-height: 50px;
     margin-right: 40px;
 }
-ul li a:hover{
+/* 如果想要下边的横线由中间向两边伸长，使用定位将其定为在中间，然后width:100% */
+ul li::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+ul li:hover a{
     color: #fff;
+}
+ul li:hover::after{
+    width: 100%;
 }
 .search em{
     display: inline-block;
