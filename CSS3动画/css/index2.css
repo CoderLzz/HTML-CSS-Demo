@@ -1,0 +1,29 @@
+.box{
+    position: relative;
+    width: 147px;
+    height: 286px;
+    background: url('../images/index_z_71df05e.png') no-repeat;
+}
+.box .erweima{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 108px;
+}
+.box .line{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 108px;
+    animation: move 2s linear infinite alternate;
+}
+@keyframes move{
+    from{
+        top: 40px;
+    }
+    to{
+        top: 142px;
+    }
+}
