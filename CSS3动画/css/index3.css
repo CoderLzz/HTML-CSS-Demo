@@ -1,0 +1,25 @@
+.bigBox{
+    position: relative;
+    width: 214px;
+    height: 214px;
+}
+.box{
+    width: 214px;
+    height: 214px;
+    background: url('../images/web.png') no-repeat;
+    animation: move 1s linear infinite;
+}
+.bigBox span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@keyframes move{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
