@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: slategray;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.headerNav{
+    height: 80px;
+    padding: 15px 30px;
+    background-color: skyblue;
+    box-sizing: border-box;
+}
+.logo{
+    margin:0 50px;
+}
+.headerNav .logo a{
+    display: block;
+    overflow: hidden;
+    width: 100px;
+    height: 50px;
+    background: url('../image/logo.jpg') no-repeat;
+    text-indent: -999em;
+}
+.logo,ul{
+    float: left;
+}
+.search{
+    height: 50px;
+    float: right;
+    line-height: 50px;
+}
+ul li{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 40px;
+}
+ul li a:hover{
+    color: #fff;
+}
+.search em{
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 26px;
+    /* margin-top: 10px; */
+    background: url("../image/index_sprite.png") no-repeat -95px -214px;
+    cursor: pointer;
+}
+.search input{
+    border: none;
+    outline: none;
+    width: 0;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 20px;
+    transition: all 1s ease;
+}
+.search:hover input{
+    width: 300px;
+    padding-left: 15px;
+}
