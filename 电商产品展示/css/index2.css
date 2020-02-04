@@ -1,0 +1,14 @@
+.box{
+    overflow: hidden;
+    width: 380px;
+    height: 260px;
+    cursor: pointer;
+}
+
+.box img{
+    transition: all 0.5s ease;
+}
+
+.box:hover img{
+    margin-left: -7px;
+}
