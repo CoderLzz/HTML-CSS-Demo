@@ -1,0 +1,16 @@
+.box{
+    overflow: hidden;
+    width: 0px;
+    height: 30px;
+    line-height: 30px;
+    background-color: pink;
+    animation: move 3s steps(7) infinite;
+}
+@keyframes move{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 120px;
+    }
+}
